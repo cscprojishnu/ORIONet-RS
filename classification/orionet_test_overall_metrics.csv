@@ -1,0 +1,13 @@
+Metric,Value
+Test Samples,2000.0
+Overall Accuracy (%),94.95
+Macro Precision (%),87.68374679913548
+Macro Recall (%),86.19958981553808
+Macro F1-Score (%),86.65380009619066
+Weighted Precision (%),95.003928829638
+Weighted Recall (%),94.95
+Weighted F1-Score (%),94.89983878811617
+Micro Precision (%),94.95
+Micro Recall (%),94.95
+Micro F1-Score (%),94.95
+Top-5 Accuracy (%),98.9

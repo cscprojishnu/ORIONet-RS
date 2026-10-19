@@ -1,0 +1,126 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Oai-HNxKtKmRvmuVBShS">
+    <mxGraphModel dx="982" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-36" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lBRLPQlVspC2FD3FRuHD-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" value="&lt;b&gt;STAGE 2 - RAFM&lt;/b&gt;&lt;div&gt;Inverted Residual: 64-&amp;gt;128, stride 2&lt;/div&gt;&lt;div&gt;Inverted Residual: 128-&amp;gt;128, stride 1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;↓&lt;/div&gt;&lt;div&gt;Adaptive Orientation Weights&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Weighted Fusion + Projection&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Residual Connection&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="235" x="80" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-39" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lBRLPQlVspC2FD3FRuHD-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" value="&lt;b&gt;AMSF Fusion Neck&lt;/b&gt;&lt;div&gt;C1 -- 1x1 Conv -- Adaptive Pool&lt;/div&gt;&lt;div&gt;C2 -- 1x1 Conv -- Adaptive Pool&lt;/div&gt;&lt;div&gt;C3 -- 1x1 Conv -- Adaptive Pool&lt;/div&gt;&lt;div&gt;C4 -- 1x1 Conv&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Learnable Scale Weights + Softmax&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Weighted Summation&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Conv 3x3 + BN + SiLu&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;RAFM Refinement&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="235" x="80" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-37" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lBRLPQlVspC2FD3FRuHD-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" value="&lt;b&gt;STAGE 3 - RAFM&lt;/b&gt;&lt;div&gt;Inverted Residual: 128-&amp;gt;256, stride 2&lt;/div&gt;&lt;div&gt;Inverted Residual: 256-&amp;gt;256, stride 1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;↓&lt;/div&gt;&lt;div&gt;Concatenation -&amp;gt; Projection&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Residual Connection&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="235" x="80" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-32" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="lBRLPQlVspC2FD3FRuHD-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" value="&lt;b&gt;Input RGB Image&lt;/b&gt;&lt;div&gt;3 x H x W&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="130" x="132.5" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-33" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="lBRLPQlVspC2FD3FRuHD-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" value="&lt;b&gt;STEM&lt;/b&gt;&lt;div&gt;Conv 3x3, s=2: 3-&amp;gt;32&lt;/div&gt;&lt;div&gt;Conv 3x3, s=1: 32-&amp;gt;64&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="130" x="132.5" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-35" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lBRLPQlVspC2FD3FRuHD-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" value="&lt;b&gt;STAGE 1 - FOEM&lt;/b&gt;&lt;div&gt;Inverted Residual: 64-&amp;gt;64&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Depthwise Conv 3x3&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Channel Attention -&amp;gt; Spatial Attention&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;1x1 Projection + Residual Connection&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="235" x="80" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;" value="C1: 64 Channels" vertex="1">
+          <mxGeometry height="30" width="90" x="210" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Georgia&quot;&gt;DW 1x7&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;Horizontal&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="60" x="100" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Georgia&quot;&gt;DW 7x1&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;Vertical&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="60" x="167.5" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Georgia&quot;&gt;DW 3x3&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;Isotropic&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="60" x="235" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;" value="C2: 128 Channels" vertex="1">
+          <mxGeometry height="30" width="105" x="210" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Georgia&quot;&gt;Local&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;3x3&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="50" x="90" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Georgia&quot;&gt;Dilated&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;d=3&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="50" x="146" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Georgia&quot;&gt;Dilated&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;d=5&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="50" x="203" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Georgia&quot;&gt;Global Pool&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="50" x="260" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;" value="C3: 256 Channels" vertex="1">
+          <mxGeometry height="30" width="105" x="210" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-38" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lBRLPQlVspC2FD3FRuHD-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" value="&lt;b&gt;STAGE 4&lt;/b&gt;&lt;div&gt;Inverted Residual: 256-&amp;gt;512, stride 2&lt;/div&gt;&lt;div&gt;Inverted Residual: 512-&amp;gt;512, stride 1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="235" x="80" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;" value="C4: 512 Channels" vertex="1">
+          <mxGeometry height="30" width="105" x="212.5" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-41" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="965" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;" value="C1" vertex="1">
+          <mxGeometry height="30" width="37.5" x="77.5" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-42" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="985" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;" value="C2" vertex="1">
+          <mxGeometry height="30" width="37.5" x="77.5" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-43" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="1005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;" value="C3" vertex="1">
+          <mxGeometry height="30" width="37.5" x="77.5" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-44" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="1025" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;" value="C4" vertex="1">
+          <mxGeometry height="30" width="37.5" x="77.5" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-40" edge="1" parent="1" source="lBRLPQlVspC2FD3FRuHD-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lBRLPQlVspC2FD3FRuHD-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" value="&lt;b&gt;CLASSIFICATION HEAD&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Global Average Pooling&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;↓&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Layer Normalization&lt;/span&gt;&lt;/div&gt;&lt;div&gt;↓&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Droput (0.2)&lt;/div&gt;&lt;div&gt;↓&lt;/div&gt;&lt;div&gt;Fully Connected Layer 256-&amp;gt;20&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="235" x="80" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="lBRLPQlVspC2FD3FRuHD-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Georgia;" value="&lt;b&gt;20-Class Output&lt;/b&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="132.5" y="1440" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
